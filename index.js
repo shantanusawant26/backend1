@@ -36,13 +36,13 @@ app.use("/",(req, res) => {
 // app.use(cors({
 //     origin: 'http://localhost:4200' // Replace with your frontend URL
 //   }));
-app.use(function(req, res, next) {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-    res.setHeader('Access-Control-Allow-Credentials', true);
-    next();
-});
+// app.use(function(req, res, next) {
+//     res.setHeader('Access-Control-Allow-Origin', '*');
+//     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+//     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+//     res.setHeader('Access-Control-Allow-Credentials', true);
+//     next();
+// });
 
 // Define URL handler
 // app.use("/", conatactUsRouters);
@@ -59,7 +59,7 @@ app.listen(PORT, () => {
 
 
 
-module.exports = app;
+
 
 
 
